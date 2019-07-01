@@ -1,12 +1,24 @@
 {
   "name": "myu-discord-bot",
   "version": "1.0.0",
-  "main": "bot.js",
+  "main": "src/bot.ts",
+  "scripts": {
+    "start": "ts-node src/bot.ts"
+  },
   "dependencies": {
+    "bunyan": "^1.8.12",
     "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
     "googleapis": "^40.0.0",
     "open": "^6.4.0",
     "server-destroy": "^1.0.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.2",
     "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/bunyan": "^1.8.6",
+    "prettier": "^1.18.2",
+    "tslint": "^5.18.0",
+    "tslint-config-airbnb": "^5.11.1"
   }
 }
