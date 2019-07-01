@@ -1,0 +1,12 @@
+{
+  "name": "myu-discord-bot",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "dependencies": {
+    "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+    "googleapis": "^40.0.0",
+    "open": "^6.4.0",
+    "server-destroy": "^1.0.1",
+    "winston": "^3.2.1"
+  }
+}
