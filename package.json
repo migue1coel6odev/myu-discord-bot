@@ -6,6 +6,7 @@
     "start": "ts-node src/bot.ts"
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "bunyan": "^1.8.12",
     "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
     "googleapis": "^40.0.0",
@@ -16,6 +17,7 @@
     "winston": "^3.2.1"
   },
   "devDependencies": {
+    "@google-cloud/nodejs-repo-tools": "^3.3.0",
     "@types/bunyan": "^1.8.6",
     "prettier": "^1.18.2",
     "tslint": "^5.18.0",
