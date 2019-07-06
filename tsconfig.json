@@ -2,7 +2,8 @@
   "compilerOptions": {
     "typeRoots": ["global.d.ts", "./src/types/helpers"],
     "skipLibCheck": true,
-    "skipDefaultLibCheck": true
+    "skipDefaultLibCheck": true,
+    "outDir": "lib/"
   },
   "include": ["src/**/*.ts", "global.d.ts"]
 }
