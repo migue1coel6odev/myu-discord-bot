@@ -40,17 +40,21 @@ export const onMessage = (
 
     args = args.splice(1);
 
-    if (Object.keys(availableCommands).some(value => value === cmd)) {
-      const result = availableCommands[cmd]({
-        user,
-        userID,
-        message,
-        channelID,
-        args,
-      });
-      if (typeof result === 'object') {
-        result.then(console.log);
+    try {
+      if (Object.keys(availableCommands).some(value => value === cmd)) {
+        const result = availableCommands[cmd]({
+          user,
+          userID,
+          message,
+          channelID,
+          args,
+        });
+        if (typeof result === 'object') {
+          result.then(console.log);
+        }
       }
+    } catch (err) {
+      console.log(err);
     }
   }
 };
